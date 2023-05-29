@@ -5,6 +5,9 @@
   "author": "Shahriyar Hosen",
   "license": "MIT",
   "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev": "node ./dist/index.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
