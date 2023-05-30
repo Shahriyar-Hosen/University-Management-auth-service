@@ -13,7 +13,10 @@ const fineLastUserId = async (): Promise<string | undefined> => {
 const generateUserId = async () => {
   const currentId = (await fineLastUserId()) || (0).toString().padStart(5, "0");
 
-  return currentId;
+  // increment by 1
+  const newId = (Number(currentId) + 1).toString().padStart(5, "0");
+
+  return newId;
 };
 
 export default generateUserId;
