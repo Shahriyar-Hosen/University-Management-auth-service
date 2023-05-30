@@ -9,8 +9,9 @@
     "dev": "node ./dist/index.js",
     "build": "tsc",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint:fix": "eslint --fix",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:fix": "prettier --write .",
     "lint-prettier": "yarn lint && yarn format",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
