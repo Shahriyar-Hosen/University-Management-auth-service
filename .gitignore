@@ -7,13 +7,6 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
 # production
 /build
 /dist
@@ -21,6 +14,13 @@
 # local env files
 .env
 .env*.local
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
 
 # misc
 .DS_Store
