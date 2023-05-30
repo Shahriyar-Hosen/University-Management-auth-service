@@ -3,8 +3,16 @@ import path from "path";
 
 dotenv.config({ path: path.join(process.cwd(), ".env") });
 
-export default {
-  port: process.env.PORT,
-  db_url: process.env.DATABASE_USL,
-  default_student_pass: process.env.DEFAULT_STUDENT_PASS,
+type IConfig = {
+  port: string;
+  db_url: string;
+  default_user_pass: string;
 };
+
+const config: IConfig = {
+  port: process.env.PORT as string,
+  db_url: process.env.DATABASE_USL as string,
+  default_user_pass: process.env.DEFAULT_USER_PASS as string,
+};
+
+export default config;
