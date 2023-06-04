@@ -11,8 +11,11 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
   const min = date.getMinutes();
   const sec = date.getSeconds();
 
+  const h = (hr > 12 && hr - 12) || hr;
+  const amPm = hr <= 12 ? "AM" : "PM";
+
   return `
-  ${date.toDateString()} ${hr}:${min}:${sec} ⁅${label}⁆ 
+  ${date.toDateString()} - ${h}:${min}:${sec} ${amPm} - ⁅${label}⁆ 
   ${level}: ${message}`;
 });
 
