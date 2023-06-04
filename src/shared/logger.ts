@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+import path from "path";
 import { createLogger, format, transports } from "winston";
 
 const logger = createLogger({
@@ -5,8 +7,10 @@ const logger = createLogger({
   format: format.json(),
   transports: [
     new transports.Console(),
-    new transports.File({ filename: "error.log", level: "error" }),
-    new transports.File({ filename: "combined.log" }),
+    new transports.File({
+      filename: path.join(process.cwd(), "log", "winston", "success.log"),
+      level: "info",
+    }),
   ],
 });
 const errLogger = createLogger({
@@ -14,8 +18,10 @@ const errLogger = createLogger({
   format: format.json(),
   transports: [
     new transports.Console(),
-    new transports.File({ filename: "error.log", level: "error" }),
-    new transports.File({ filename: "combined.log" }),
+    new transports.File({
+      filename: path.join(process.cwd(), "log", "winston", "errors.log"),
+      level: "error",
+    }),
   ],
 });
 
