@@ -1,10 +1,30 @@
 /* eslint-disable no-undef */
 import path from "path";
 import { createLogger, format, transports } from "winston";
+const { combine, timestamp, label, printf, prettyPrint } = format;
+
+const myFormat = printf(({ level, message, label, timestamp }) => {
+  const date = new Date(timestamp);
+
+  const hr = date.getHours();
+  const min = date.getMinutes();
+  const sec = date.getSeconds();
+
+  return `
+  ${date.toDateString()} ${hr}:${min}:${sec} ⁅${label}⁆ 
+  ${level}: ${message}`;
+});
 
 const logger = createLogger({
   level: "info",
-  format: format.json(),
+  format: combine(
+    label({
+      label: "PH♻️",
+    }),
+    timestamp(),
+    prettyPrint(),
+    myFormat
+  ),
   transports: [
     new transports.Console(),
     new transports.File({
@@ -15,7 +35,14 @@ const logger = createLogger({
 });
 const errLogger = createLogger({
   level: "error",
-  format: format.json(),
+  format: combine(
+    label({
+      label: "PH♻️",
+    }),
+    timestamp(),
+    prettyPrint(),
+    myFormat
+  ),
   transports: [
     new transports.Console(),
     new transports.File({

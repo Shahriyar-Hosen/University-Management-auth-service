@@ -1,2 +1,134 @@
 {"level":"info","message":"Database is Connected Successfully! ✅📦✅"}
 {"level":"info","message":"Server is app listening on port 1002 🫀✅🫀"}
+{"level":"info","message":"Database is Connected Successfully! ✅📦✅"}
+{"level":"info","message":"Server is app listening on port 1002 🫀✅🫀"}
+{"level":"info","message":"Database is Connected Successfully! ✅📦✅"}
+{"level":"info","message":"Server is app listening on port 1002 🫀✅🫀"}
+{"level":"info","message":"Database is Connected Successfully! ✅📦✅"}
+{"level":"info","message":"Server is app listening on port 1002 🫀✅🫀"}
+2023-06-04T12:23:53.057Z [right meow!] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:23:53.068Z [right meow!] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:24:00.659Z [right meow!] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:24:00.664Z [right meow!] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:24:05.105Z [right meow!] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:24:05.110Z [right meow!] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:25:16.939Z [➡️♻️➡️] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:25:16.944Z [➡️♻️➡️] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:25:41.107Z [➡️♻️➡️ ] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:25:41.113Z [➡️♻️➡️ ] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:26:16.551Z [➡️♻️➡️ ⚡⚡] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:26:16.559Z [➡️♻️➡️ ⚡⚡] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:27:58.024Z [✔️ ♻️ ➡️] info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:27:58.029Z [✔️ ♻️ ➡️] info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:28:05.341Z ✔️ ♻️ ➡️ info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:28:05.346Z ✔️ ♻️ ➡️ info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:28:10.726Z ✔️ ♻️ ➡️ info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:28:10.731Z ✔️ ♻️ ➡️ info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:29:12.031Z ⁅✔️ ♻️ ➡️⁆ info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:29:12.035Z ⁅✔️ ♻️ ➡️⁆ info: Server is app listening on port 1002 🫀✅🫀
+2023-06-04T12:30:47.651Z ⁅✔️ ♻️ ➡️⁆ info: Database is Connected Successfully! ✅📦✅
+2023-06-04T12:30:47.658Z ⁅✔️ ♻️ ➡️⁆ info: Server is app listening on port 1002 🫀✅🫀
+{
+  message: 'Database is Connected Successfully! ✅📦✅',
+  level: 'info',
+  label: '✔️ ♻️ ➡️',
+  timestamp: '2023-06-04T12:30:59.349Z'
+}
+{
+  message: 'Server is app listening on port 1002 🫀✅🫀',
+  level: 'info',
+  label: '✔️ ♻️ ➡️',
+  timestamp: '2023-06-04T12:30:59.355Z'
+}
+{
+  message: 'Database is Connected Successfully! ✅📦✅',
+  level: 'info',
+  label: '✔️ ♻️ ➡️',
+  timestamp: '2023-06-04T12:31:45.913Z'
+}
+{
+  message: 'Server is app listening on port 1002 🫀✅🫀',
+  level: 'info',
+  label: '✔️ ♻️ ➡️',
+  timestamp: '2023-06-04T12:31:45.919Z'
+}
+
+  2023-06-04T12:31:57.032Z
+   ⁅✔️ ♻️ ➡️⁆ 
+   info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:31:57.044Z
+   ⁅✔️ ♻️ ➡️⁆ 
+   info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:32:20.668Z
+  ⁅✔️ ♻️ ➡️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:32:20.675Z
+  ⁅✔️ ♻️ ➡️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:32:54.376Z
+  ⁅♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:32:54.382Z
+  ⁅♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:32:59.846Z
+  ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:32:59.852Z
+  ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:33:28.276Z ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:33:28.283Z ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:34:18.781Z ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:34:18.787Z ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:34:30.776Z ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:34:30.782Z ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  2023-06-04T12:35:10.530Z ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  2023-06-04T12:35:10.536Z ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 04 2023 18:36:14 ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Sun Jun 04 2023 18:36:14 ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 04 2023 18:37:33 ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Sun Jun 04 2023 18:37:33 ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 04 2023 18:37:39 ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Sun Jun 04 2023 18:37:39 ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 04 2023 18:38:15 ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Sun Jun 04 2023 18:38:15 ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀

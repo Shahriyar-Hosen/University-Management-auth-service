@@ -1,2 +1,11 @@
 {"level":"error","message":"❌❌❌ Database connection failed‼ error:- Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.ffuotiu.mongodb.net"}
 {"level":"error","message":"❌❌❌ Database connection failed‼ error:- MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+
+  Sun Jun 04 2023 18:40:17 ⁅PH♻️⁆ 
+  error: ❌❌❌ Database connection failed‼ error:- MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+
+  Sun Jun 04 2023 18:41:46 ⁅PH♻️⁆ 
+  error: ❌❌❌ Database connection failed‼ error:- MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+
+  Sun Jun 04 2023 18:41:47 ⁅PH♻️⁆ 
+  error: ❌❌❌ Database connection failed‼ error:- MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
