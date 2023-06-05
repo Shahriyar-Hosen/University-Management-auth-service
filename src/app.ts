@@ -15,13 +15,12 @@ app.use(express.urlencoded({ extended: true }));
 // Application Route
 app.use("/api/v1/users/", UserRoutes);
 
-// Testing
-// app.get("/", (req: Request, res: Response, next: NextFunction) => {
-//   throw new ApiError(400, "Ore baba Error");
-//   // next("Ore baba Error");
+//Testing
+// app.get("/", async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error("Testing Error logger");
 // });
 
-// global error handler
+//global error handler
 app.use(globalErrorHandler);
 
 export default app;
