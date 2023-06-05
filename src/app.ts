@@ -19,12 +19,6 @@ app.get("/", async (req: Request, res: Response) => {
   res.send("Application running Successfully!!! ✅✅✅");
 });
 
-// Testing
-// app.get("/", (req: Request, res: Response, next: NextFunction) => {
-//   throw new ApiError(400, "Ore baba Error");
-//   // next("Ore baba Error");
-// });
-
 // global error handler
 app.use(globalErrorHandler);
 
