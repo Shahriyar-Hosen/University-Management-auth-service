@@ -26,3 +26,143 @@
     "message": "role is required"
   }
 ]
+
+  Wed Jun 07 2023 - 6:41:15 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:41:15 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Wed Jun 07 2023 - 6:42:22 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:42:53 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:43:2 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:43:25 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:43:36 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:45:0 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Cannot set properties of undefined (setting 'id')
+
+  Wed Jun 07 2023 - 6:45:44 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:46:41 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:46:41 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Wed Jun 07 2023 - 6:46:55 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:46:55 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Wed Jun 07 2023 - 6:47:12 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:47:13 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Wed Jun 07 2023 - 6:47:26 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+
+  Wed Jun 07 2023 - 6:48:50 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Cannot set properties of undefined (setting 'id')
+
+  Wed Jun 07 2023 - 6:49:32 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:49:32 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Wed Jun 07 2023 - 6:50:53 PM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Wed Jun 07 2023 - 6:50:53 PM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
