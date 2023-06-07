@@ -1,4 +1,4 @@
-import User from "../modules/users/users.model";
+import User from "../modules/user/user.model";
 
 const fineLastUserId = async (): Promise<string | undefined> => {
   const lastUser = await User.findOne({}, { id: 1, _id: 0 })

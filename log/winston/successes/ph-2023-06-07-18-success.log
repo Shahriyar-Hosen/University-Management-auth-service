@@ -1,6 +1,28 @@
 
-  Wed Jun 07 2023 - 6:39:12 PM - ⁅PH♻️⁆ 
-  info: Database is Connected Successfully! ✅📦✅
+  Wed Jun 07 2023 - 6:12:9 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
 
-  Wed Jun 07 2023 - 6:39:12 PM - ⁅PH♻️⁆ 
-  info: Server is app listening on port 1002 🫀✅🫀
+  Wed Jun 07 2023 - 6:12:41 PM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
