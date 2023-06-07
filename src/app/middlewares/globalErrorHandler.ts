@@ -1,12 +1,16 @@
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from "express";
 import config from "../../config";
-import ApiError from "../../errors/ApiError";
-import handleValidationError from "../../errors/handleValidationError";
 import { IGenericErrorMessage } from "../../interfaces/error";
 import { errLogger, logger } from "../../shared/logger";
+import { ApiError, handleValidationError } from "../../errors";
 
-const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
+export const globalErrorHandler: ErrorRequestHandler = (
+  error,
+  req,
+  res,
+  next
+) => {
   config.env === "development"
     ? logger.info(`🐱‍🏍 globalErrorHandler ~~`, error)
     : errLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
@@ -53,5 +57,3 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   next();
 };
-
-export default globalErrorHandler;
