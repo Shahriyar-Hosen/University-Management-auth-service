@@ -1,12 +1,17 @@
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from "express";
+import { ZodError } from "zod";
 import config from "../../config";
-import ApiError from "../../errors/ApiError";
-import handleValidationError from "../../errors/handleValidationError";
+import { ApiError, handleValidationError, handleZodError } from "../../errors";
 import { IGenericErrorMessage } from "../../interfaces/error";
 import { errLogger, logger } from "../../shared/logger";
 
-const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
+export const globalErrorHandler: ErrorRequestHandler = (
+  error,
+  req,
+  res,
+  next
+) => {
   config.env === "development"
     ? logger.info(`🐱‍🏍 globalErrorHandler ~~`, error)
     : errLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
@@ -18,6 +23,11 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   if (error?.name === "ValidationError") {
     const simplifiedError = handleValidationError(error);
 
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZodError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
@@ -53,5 +63,3 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   next();
 };
-
-export default globalErrorHandler;
