@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 1
+  "keep": {
+    "days": true,
+    "amount": 1
+  },
+  "auditLog": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\.960a524e23b49a6ae497daf8a2905f5ca34ea47d-audit.json",
+  "files": [
+    {
+      "date": 1686144471986,
+      "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-19-error.log",
+      "hash": "1437598eb67f7a1e6497d7ef05ee3817e0d7904a60f664786fb82006b8f49bec"
     },
-    "auditLog": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\.960a524e23b49a6ae497daf8a2905f5ca34ea47d-audit.json",
-    "files": [
-        {
-            "date": 1686144471986,
-            "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-19-error.log",
-            "hash": "1437598eb67f7a1e6497d7ef05ee3817e0d7904a60f664786fb82006b8f49bec"
-        },
-        {
-            "date": 1686146465828,
-            "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-20-error.log",
-            "hash": "83d898f368e78a5439a6549b5a2294586f03d4dbe1cbf293b179dc2b22c07b0c"
-        },
-        {
-            "date": 1686152414345,
-            "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-21-error.log",
-            "hash": "0fdf6e32af27ca62123e305edf41de1db659509dc9cfcf2c40fe76f1a9adbc3b"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1686146465828,
+      "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-20-error.log",
+      "hash": "83d898f368e78a5439a6549b5a2294586f03d4dbe1cbf293b179dc2b22c07b0c"
+    },
+    {
+      "date": 1686152414345,
+      "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\errors\\ph-2023-06-07-21-error.log",
+      "hash": "0fdf6e32af27ca62123e305edf41de1db659509dc9cfcf2c40fe76f1a9adbc3b"
+    }
+  ],
+  "hashType": "sha256"
 }
