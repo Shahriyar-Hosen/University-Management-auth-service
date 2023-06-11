@@ -1,4 +1,6 @@
-const Month = [
+import { IASCode, IASTitles, IASMonths } from "./as.interface";
+
+export const ASMonths: IASMonths[] = [
   "January",
   "February",
   "March",
@@ -13,4 +15,6 @@ const Month = [
   "December",
 ];
 
-export { Month };
+export const ASTitles: IASTitles[] = ["Autumn", "Summer", "Fall"];
+
+export const ASCode: IASCode[] = ["01", "02", "03"];
