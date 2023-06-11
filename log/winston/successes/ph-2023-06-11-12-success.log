@@ -22,3 +22,39 @@
 
   Sun Jun 11 2023 - 12:7:54 AM - ⁅PH♻️⁆ 
   info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 11 2023 - 12:7:58 AM - ⁅PH♻️⁆ 
+  info: Database is Connected Successfully! ✅📦✅
+
+  Sun Jun 11 2023 - 12:7:58 AM - ⁅PH♻️⁆ 
+  info: Server is app listening on port 1002 🫀✅🫀
+
+  Sun Jun 11 2023 - 12:9:39 AM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Academic semester is already exist!
+
+  Sun Jun 11 2023 - 12:10:3 AM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Academic semester is already exist!
+
+  Sun Jun 11 2023 - 12:10:11 AM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Academic semester is already exist!
+
+  Sun Jun 11 2023 - 12:10:39 AM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "received": "AutumnSummer",
+    "code": "invalid_enum_value",
+    "options": [
+      "Autumn",
+      "Summer",
+      "Fall"
+    ],
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'AutumnSummer'"
+  }
+]
+
+  Sun Jun 11 2023 - 12:11:6 AM - ⁅PH♻️⁆ 
+  info: 🐱‍🏍 globalErrorHandler ~~ Academic semester is already exist!

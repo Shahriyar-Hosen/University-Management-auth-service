@@ -74,6 +74,16 @@
             "date": 1686463540768,
             "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\successes\\ph-2023-06-11-12-success.log",
             "hash": "cd1b2ce07e066b59efe3604d0e174c3a26af66a08cc8789698561ab0b7ac7a44"
+        },
+        {
+            "date": 1686473142191,
+            "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\successes\\ph-2023-06-11-14-success.log",
+            "hash": "802dfcad095c1efdfb0a469e9ab01d44a7e4b04e8255388bac9bf9f72ffb035b"
+        },
+        {
+            "date": 1686474090974,
+            "name": "D:\\Dev_Salman\\Project\\Server\\university-management-auth-service\\log\\winston\\successes\\ph-2023-06-11-15-success.log",
+            "hash": "433e2a6dc6f19f1b533b428ba2f09ee808742a9bde7e3173b6a4234f441a61dd"
         }
     ],
     "hashType": "sha256"
