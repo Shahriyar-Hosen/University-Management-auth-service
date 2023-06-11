@@ -7,7 +7,6 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     title: {
       type: String,
       required: true,
-      unique: true,
       enum: ASTitles,
     },
     code: {
