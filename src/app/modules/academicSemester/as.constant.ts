@@ -1,6 +1,10 @@
-import { IASCode, IASTitles, IASMonths } from "./as.interface";
+import {
+  IAcademicSemesterCode,
+  IAcademicSemesterMonths,
+  IAcademicSemesterTitles,
+} from "./as.interface";
 
-export const ASMonths: IASMonths[] = [
+export const AcademicSemesterMonths: IAcademicSemesterMonths[] = [
   "January",
   "February",
   "March",
@@ -15,6 +19,10 @@ export const ASMonths: IASMonths[] = [
   "December",
 ];
 
-export const ASTitles: IASTitles[] = ["Autumn", "Summer", "Fall"];
+export const AcademicSemesterTitles: IAcademicSemesterTitles[] = [
+  "Autumn",
+  "Summer",
+  "Fall",
+];
 
-export const ASCode: IASCode[] = ["01", "02", "03"];
+export const AcademicSemesterCode: IAcademicSemesterCode[] = ["01", "02", "03"];

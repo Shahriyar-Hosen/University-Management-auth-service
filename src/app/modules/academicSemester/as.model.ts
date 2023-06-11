@@ -1,5 +1,9 @@
 import { Schema, model } from "mongoose";
-import { ASCode, ASMonths, ASTitles } from "./as.constant";
+import {
+  AcademicSemesterCode,
+  AcademicSemesterMonths,
+  AcademicSemesterTitles,
+} from "./as.constant";
 import { AcademicSemesterModel, IAcademicSemester } from "./as.interface";
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
@@ -7,12 +11,12 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     title: {
       type: String,
       required: true,
-      enum: ASTitles,
+      enum: AcademicSemesterTitles,
     },
     code: {
       type: String,
       required: true,
-      enum: ASCode,
+      enum: AcademicSemesterCode,
     },
     year: {
       type: Number,
@@ -21,13 +25,13 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     startMonth: {
       type: String,
       required: true,
-      enum: ASMonths,
+      enum: AcademicSemesterMonths,
     },
 
     endMonth: {
       type: String,
       required: true,
-      enum: ASMonths,
+      enum: AcademicSemesterMonths,
     },
   },
   {

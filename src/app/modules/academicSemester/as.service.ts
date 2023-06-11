@@ -8,6 +8,6 @@ const crateSemester = async (
   return result;
 };
 
-export const ASService = {
+export const AcademicSemesterService = {
   crateSemester,
 };

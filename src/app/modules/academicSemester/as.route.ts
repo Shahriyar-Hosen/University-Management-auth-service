@@ -1,6 +1,6 @@
 import express from "express";
 import { validateRequest } from "../../middlewares";
-import { ASController } from "./as.controller";
+import { AcademicSemesterController } from "./as.controller";
 import { AcademicSemesterValidation } from "./as.validation";
 
 const router = express.Router();
@@ -8,7 +8,7 @@ const router = express.Router();
 router.post(
   "/create-semester",
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
-  ASController.createSemester
+  AcademicSemesterController.createSemester
 );
 
-export const ASRoutes = router;
+export const AcademicSemesterRoutes = router;

@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
-import { ASService } from "./as.service";
+import { AcademicSemesterService } from "./as.service";
 
 const createSemester: RequestHandler = async (req, res, next) => {
   try {
     const { ...data } = req.body;
 
-    const result = await ASService.crateSemester(data);
+    const result = await AcademicSemesterService.crateSemester(data);
 
     res.status(200).json({
       success: true,
@@ -17,6 +17,6 @@ const createSemester: RequestHandler = async (req, res, next) => {
   }
 };
 
-export const ASController = {
+export const AcademicSemesterController = {
   createSemester,
 };
