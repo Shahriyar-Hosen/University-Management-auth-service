@@ -1,9 +1,9 @@
 import httpStatus from "http-status";
 import { ApiError } from "../../../errors";
+import { IGenericResponse, IPaginationOption } from "../../../interfaces";
 import { academicSemesterTitleCodeMapper } from "./as.constant";
 import { IAcademicSemester } from "./as.interface";
 import AcademicSemester from "./as.model";
-import { IPaginationOption } from "../../../interfaces";
 
 const crateSemester = async (
   payload: IAcademicSemester
@@ -16,7 +16,25 @@ const crateSemester = async (
   return result;
 };
 
-const getAllSemesters = async (paginationOption: IPaginationOption) => {};
+const getAllSemesters = async (
+  paginationOption: IPaginationOption
+): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { page = 1, limit = 10 } = paginationOption || {};
+  const skip = (page - 1) * limit;
+
+  const result = await AcademicSemester.find().sort().skip(skip).limit(limit);
+
+  const total = await AcademicSemester.countDocuments();
+
+  return {
+    meta: {
+      page,
+      limit,
+      total,
+    },
+    data: result,
+  };
+};
 
 export const AcademicSemesterService = {
   crateSemester,
