@@ -20,7 +20,7 @@ const sendResponse = <T>(
     statusCode: statusCode,
     success: success,
     message: message || null,
-    meta: meta || null,
+    meta: meta || null || undefined,
     data: data || null,
   };
 
