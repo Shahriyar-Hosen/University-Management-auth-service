@@ -3,7 +3,10 @@ import { SortOrder } from "mongoose";
 import { ApiError } from "../../../errors";
 import { calculatePagination } from "../../../helpers";
 import { IGenericResponse, IPaginationOption } from "../../../interfaces";
-import { academicSemesterTitleCodeMapper } from "./as.constant";
+import {
+  academicSemesterSearchableFields,
+  academicSemesterTitleCodeMapper,
+} from "./as.constant";
 import { IAcademicSemester, IAcademicSemesterFilter } from "./as.interface";
 import AcademicSemester from "./as.model";
 
@@ -22,10 +25,17 @@ const getAllSemesters = async (
   filters: IAcademicSemesterFilter,
   paginationOption: IPaginationOption
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { searchTerm } = filters || {};
+  const { searchTerm, ...filtersData } = filters || {};
 
-  const academicSemesterSearchableFields = ["title", "code", "year"];
   const andCondition = [];
+
+  if (Object.keys(filtersData).length) {
+    andCondition.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
+      })),
+    });
+  }
 
   if (searchTerm) {
     andCondition.push({
