@@ -31,6 +31,12 @@ export const globalErrorHandler: ErrorRequestHandler = (
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
+  } else if (error?.name === "CastError") {
+    // const simplifiedError = handleCastErrorError(error);
+
+    res.status(200).json({
+      error,
+    });
   } else if (error instanceof ApiError) {
     statusCode = error?.statusCode;
     message = error.message;
