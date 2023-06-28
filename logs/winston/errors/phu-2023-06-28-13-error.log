@@ -1,0 +1,9 @@
+
+  Wed Jun 28 2023 - 1:20:16 PM - ⁅PH♻️⁆
+  error: 🐱‍🏍 globalErrorHandler ~~
+
+  Wed Jun 28 2023 - 1:20:57 PM - ⁅PH♻️⁆
+  error: 🐱‍🏍 globalErrorHandler ~~ Cast to ObjectId failed for value "6489c8a8842c4ef9f993" (type string) at path "_id" for model "AcademicSemester"
+
+  Wed Jun 28 2023 - 1:25:58 PM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Cast to ObjectId failed for value "6489c8a8842c4ef9f993" (type string) at path "_id" for model "AcademicSemester"

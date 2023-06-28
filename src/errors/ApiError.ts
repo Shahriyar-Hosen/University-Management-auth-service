@@ -1,10 +1,9 @@
-export class ApiError extends Error {
+class ApiError extends Error {
   statusCode: number;
 
   constructor(statusCode: number, message: string | undefined, stack = "") {
     super(message);
     this.statusCode = statusCode;
-
     if (stack) {
       this.stack = stack;
     } else {
@@ -12,3 +11,5 @@ export class ApiError extends Error {
     }
   }
 }
+
+export default ApiError;
