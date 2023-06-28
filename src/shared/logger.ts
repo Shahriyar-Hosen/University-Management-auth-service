@@ -27,7 +27,6 @@ const logger = createLogger({
       label: "PH♻️",
     }),
     timestamp(),
-    // prettyPrint(),
     myFormat
   ),
   transports: [
@@ -48,14 +47,13 @@ const logger = createLogger({
   ],
 });
 
-const errorlogger = createLogger({
+const errLogger = createLogger({
   level: "error",
   format: combine(
     label({
       label: "PH♻️",
     }),
     timestamp(),
-    // prettyPrint(),
     myFormat
   ),
   transports: [
@@ -76,4 +74,4 @@ const errorlogger = createLogger({
   ],
 });
 
-export { errorlogger, logger };
+export { errLogger, logger };

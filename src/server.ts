@@ -49,10 +49,10 @@ import { Server } from "http";
 import mongoose from "mongoose";
 import app from "./app";
 import config from "./config/index";
-import { errorlogger, logger } from "./shared/logger";
+import { errLogger, logger } from "./shared/logger";
 
 process.on("uncaughtException", error => {
-  errorlogger.error(error);
+  errLogger.error(error);
   process.exit(1);
 });
 
@@ -67,13 +67,13 @@ async function bootstrap() {
       logger.info(`Server is app listening on port ${config.port} 🫀✅🫀`);
     });
   } catch (err) {
-    errorlogger.error("❌❌❌ Database connection failed‼ error:- " + err);
+    errLogger.error("❌❌❌ Database connection failed‼ error:- " + err);
   }
 
   process.on("unhandledRejection", error => {
     if (server) {
       server.close(() => {
-        errorlogger.error(error);
+        errLogger.error(error);
         process.exit(1);
       });
     } else {
