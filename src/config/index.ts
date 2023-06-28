@@ -1,20 +1,12 @@
+/* eslint-disable no-undef */
 import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({ path: path.join(process.cwd(), ".env") });
 
-type IConfig = {
-  env: string;
-  port: string;
-  db_url: string;
-  default_user_pass: string;
+export default {
+  env: process.env.NODE_ENV,
+  port: process.env.PORT,
+  database_url: process.env.DATABASE_URL,
+  default_user_pass: process.env.DEFAULT_USER_PASS,
 };
-
-const config: IConfig = {
-  env: process.env.NODE_ENV as string,
-  port: process.env.PORT as string,
-  db_url: process.env.DATABASE_URL as string,
-  default_user_pass: process.env.DEFAULT_USER_PASS as string,
-};
-
-export default config;

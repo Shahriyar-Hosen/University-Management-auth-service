@@ -1,30 +1,27 @@
 import { Response } from "express";
 
-type IApiResponse<T> = {
+type IApiReponse<T> = {
   statusCode: number;
   success: boolean;
   message?: string | null;
-  data?: T | null;
   meta?: {
     page: number;
     limit: number;
     total: number;
-  } | null;
+  };
+  data?: T | null;
 };
 
-const sendResponse = <T>(
-  res: Response,
-  { statusCode, success, data, message, meta }: IApiResponse<T>
-): void => {
-  const responseData: IApiResponse<T> = {
-    statusCode: statusCode,
-    success: success,
-    message: message || null,
-    meta: meta || null || undefined,
-    data: data || null,
+const sendReponse = <T>(res: Response, data: IApiReponse<T>): void => {
+  const responseData: IApiReponse<T> = {
+    statusCode: data.statusCode,
+    success: data.success,
+    message: data.message || null,
+    meta: data.meta || null || undefined,
+    data: data.data || null,
   };
 
-  res.status(statusCode).json(responseData);
+  res.status(data.statusCode).json(responseData);
 };
 
-export default sendResponse;
+export default sendReponse;

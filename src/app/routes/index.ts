@@ -1,12 +1,10 @@
-import express, { Router } from "express";
-import { AcademicSemesterRoutes } from "../modules/academicSemester/as.route";
+import express from "express";
+import { AcademicSemesterRoutes } from "../modules/academicSemester/academicSemester.route";
 import { UserRoutes } from "../modules/user/user.route";
 
-const routes = express.Router();
+const router = express.Router();
 
-type IRoutes = { path: string; route: Router };
-
-const moduleRoutes: IRoutes[] = [
+const moduleRoutes = [
   {
     path: "/users",
     route: UserRoutes,
@@ -17,6 +15,5 @@ const moduleRoutes: IRoutes[] = [
   },
 ];
 
-moduleRoutes.forEach(({ path, route }) => routes.use(path, route));
-
-export default routes;
+moduleRoutes.forEach(route => router.use(route.path, route.route));
+export default router;
