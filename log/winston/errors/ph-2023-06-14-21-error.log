@@ -1,9 +1,0 @@
-
-  Wed Jun 14 2023 - 9:39:16 PM - ⁅PH♻️⁆ 
-  error: Cast to ObjectId failed for value "6489c8a8842c4ef9f993a7" (type string) at path "_id" for model "AcademicSemester"
-
-  Wed Jun 14 2023 - 9:43:39 PM - ⁅PH♻️⁆ 
-  error: Cast to ObjectId failed for value "6489c8a8842c4ef9f993a" (type string) at path "_id" for model "AcademicSemester"
-
-  Wed Jun 14 2023 - 9:56:54 PM - ⁅PH♻️⁆ 
-  error: Cast to ObjectId failed for value "64899afd6ad64273a" (type string) at path "_id" for model "AcademicSemester"
