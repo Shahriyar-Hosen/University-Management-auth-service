@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
-import { Error } from "mongoose";
 import config from "../../config";
 import ApiError from "../../errors/ApiError";
 import handleValidationError from "../../errors/handleValidationError";
@@ -20,8 +20,8 @@ const globalErrorHandler: ErrorRequestHandler = (
   next: NextFunction
 ) => {
   config.env === "development"
-    ? errLogger.error(`🐱‍🏍 Global Error Handler (development) ~~`, error)
-    : errLogger.error(`🐱‍🏍 Global Error Handler (production) ~~`, error);
+    ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })
+    : errLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
 
   let statusCode = 500;
   let message = "Something went wrong !";
