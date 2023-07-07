@@ -14,13 +14,13 @@ let server: Server;
 async function bootstrap() {
   try {
     await mongoose.connect(config.database_url as string);
-    logger.info(`🛢   Database is connected successfully`);
+    logger.info(`Database is Connected Successfully! ✅📦✅`);
 
     server = app.listen(config.port, () => {
-      logger.info(`Application  listening on port ${config.port}`);
+      logger.info(`Server is app listening on port ${config.port} 🫀✅🫀`);
     });
   } catch (err) {
-    errLogger.error("Failed to connect database", err);
+    errLogger.error("❌❗❌❗❌ Database connection failed❗ error:- " + err);
   }
 
   process.on("unhandledRejection", error => {
