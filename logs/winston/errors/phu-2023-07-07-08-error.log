@@ -1,0 +1,15 @@
+
+  Fri Jul 07 2023 - 8:42:39 AM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Can't use $paginationOptions with String.
+
+  Fri Jul 07 2023 - 8:43:5 AM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Can't use $paginationOptions with String.
+
+  Fri Jul 07 2023 - 8:43:16 AM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Can't use $paginationOptions with String.
+
+  Fri Jul 07 2023 - 8:47:41 AM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Cast to ObjectId failed for value "649bf24477272479a173e" (type string) at path "_id" for model "AcademicDepartment"
+
+  Fri Jul 07 2023 - 8:48:4 AM - ⁅PH♻️⁆
+  error: 🐱‍🏍 Global Error Handler (development) ~~ Cast to ObjectId failed for value "649be8621446a807db45f6" (type string) at path "_id" for model "AcademicFaculty"
