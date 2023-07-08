@@ -8,8 +8,8 @@ import { UserService } from "./user.service";
 
 const createUser: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
-    const { user } = req.body;
-    const result = await UserService.createUser(user);
+    const { ...userData } = req.body;
+    const result = await UserService.createUser(userData);
 
     sendResponse<IUser>(res, {
       statusCode: httpStatus.OK,
