@@ -42,7 +42,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 export default app;
 
 // const as = {
-//   code: "01",
+//   code: "01
 
 const testId = async () => {
   const testId = await generateFacultyId();
