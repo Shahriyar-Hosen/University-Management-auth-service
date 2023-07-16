@@ -43,7 +43,6 @@ export default app;
 
 // const as = {
 //   code: "01",
-//
 
 const testId = async () => {
   const testId = await generateFacultyId();
