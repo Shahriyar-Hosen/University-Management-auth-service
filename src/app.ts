@@ -41,8 +41,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 export default app;
 
-//
-
 const testId = async () => {
   const testId = await generateFacultyId();
   // eslint-disable-next-line no-console
