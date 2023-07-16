@@ -44,7 +44,6 @@ export default app;
 // const as = {
 //   code: "01",
 //   year: "2025",
-//
 
 const testId = async () => {
   const testId = await generateFacultyId();
