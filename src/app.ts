@@ -2,7 +2,7 @@ import cors from "cors";
 import express, { Application, NextFunction, Request, Response } from "express";
 import httpStatus from "http-status";
 import globalErrorHandler from "./app/middlewares/globalErrorHandler";
-import { generateStudentId } from "./app/modules/user/user.utils";
+import { generateFacultyId } from "./app/modules/user/user.utils";
 import routes from "./app/routes";
 const app: Application = express();
 
@@ -12,8 +12,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use('/api/v1/users/', UserRoutes);
-// app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
 app.use("/api/v1", routes);
 
 //Testing
@@ -41,13 +39,9 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 export default app;
 
-const as = {
-  code: "01",
-  year: "2025",
-};
-
 const testId = async () => {
-  const testId = await generateStudentId(as);
+  const testId = await generateFacultyId();
+  // eslint-disable-next-line no-console
   console.log(testId);
 };
 
