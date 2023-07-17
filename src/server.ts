@@ -39,7 +39,6 @@ bootstrap();
 
 process.on("SIGTERM", () => {
   logger.info("SIGTERM is received");
-
   if (server) {
     server.close();
   }
