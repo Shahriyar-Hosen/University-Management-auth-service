@@ -16,7 +16,6 @@ app.use("/api/v1", routes);
 
 //Testing
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-//
 
 //global error handler
 app.use(globalErrorHandler);
