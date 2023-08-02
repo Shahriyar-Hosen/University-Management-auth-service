@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnsave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+    },
+    "cSpell.words": [
+        "academicsemester"
+    ]
+}
