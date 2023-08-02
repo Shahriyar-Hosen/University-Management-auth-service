@@ -91,7 +91,7 @@ const updateStudent = async (
 
   /* const name ={
     
-  }
+  
 */
 
   // dynamically handling
