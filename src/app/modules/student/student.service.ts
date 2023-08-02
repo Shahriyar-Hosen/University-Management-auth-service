@@ -90,7 +90,7 @@ const updateStudent = async (
   const updatedStudentData: Partial<IStudent> = { ...studentData };
 
   /* const name ={
-    fisrtName: 'Mezba',  <----- update korar jnno
+    fisrtName: 'Mezba',  <----- update korar
   }
 */
 
