@@ -89,7 +89,7 @@ const updateStudent = async (
 
   const updatedStudentData: Partial<IStudent> = { ...studentData };
 
-  /* const 
+  /* 
     
   
 */
