@@ -101,7 +101,7 @@ const updateStudent = async (
     Object.keys(guardian).forEach(key => {
       const guardianKey = `guardian.${key}` as keyof Partial<IStudent>; // `guardian.fisrtguardian`
       (updatedStudentData as any)[guardianKey] =
-        guardian[key as keyof typeof guardian]; // updatedStudentData['guardian.motherContactNo']=guardian[motherContactNo]
+        guardian[key as keyof typeof guardian]; // updatedStudentData['guardian.motherContactNo']=guardian[
     });
   }
   if (localGuardian && Object.keys(localGuardian).length > 0) {
