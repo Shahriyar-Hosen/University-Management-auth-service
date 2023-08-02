@@ -24,8 +24,8 @@ export const generateStudentId = async (
   //increment by 1
   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, "0");
   //20 25
-  incrementedId = `${academicSemester.year.substring(2)}${
-    academicSemester.code
+  incrementedId = `${academicSemester?.year.substring(2)}${
+    academicSemester?.code
   }${incrementedId}`;
 
   return incrementedId;
