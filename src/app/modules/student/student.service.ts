@@ -91,8 +91,6 @@ const updateStudent = async (
 
   /* const name ={
     fisrtName: 'Mezba',  <----- update korar jnno
-    middleName:'
-    
   }
 */
 
