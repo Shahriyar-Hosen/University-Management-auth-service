@@ -89,11 +89,6 @@ const updateStudent = async (
 
   const updatedStudentData: Partial<IStudent> = { ...studentData };
 
-  /* 
-    
-  
-*/
-
   // dynamically handling
 
   if (name && Object.keys(name).length > 0) {
