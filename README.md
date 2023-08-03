@@ -277,3 +277,66 @@ Below is the sample data for different roles in the university management system
 6. Read Faculty (Pagination)
 7. Update faculty
 8. Delete Faculty
+
+### User
+
+- `POST` /users/create-student
+- `POST` /users/create-faculty
+- `POST` /users/create-admin
+- `GET` /users/my-profile
+- `GET` /users/:id
+- `PATCH` /users/:id
+- `DELETE` /user/:id
+- `POST` /users/:id/force-logged-out
+- `GET` /users?page=1&limit=10
+- `GET` /users/:id/available-permissions?page=1&limit=10
+- `GET` /users/:id/assigned-permissions?page=1&limit=10
+- `POST` /users/:id/assign-permissions
+- `POST` /users/:id/remove-permissions
+
+### Student
+
+- `GET` /students
+- `GET` /students?page=1&limit=10
+- `GET` /students/:id
+- `PATCH` /students/:id
+- `DELETE` /students/:id
+
+### Faculty
+
+- `GET` /faculties?page=1&limit=10&sortBy=gender&sortOrder=desc
+- `GET` /faculties?searchTerm=lec
+- `GET` /faculties/:id
+- `PATCH` /faculties/:id
+- `DELETE` /faculties/:id
+
+### Admin
+
+- `GET` /admins?page=1&limit=10
+- `GET` /admins/:id
+- `PATCH` /admin/:id
+
+### Permission
+
+- `GET` /permissions?page=1&limit=10
+- `POST` /permissions
+- `GET` /permissions/:id
+- `PATCH` /permissions/:id
+- `DELETE` /permissions/:id
+
+### Auth
+
+- `POST` /auth/login
+  - Request body: `id`, `password`
+- `POST` /auth/change-password
+- `POST` /auth/refresh-token
+- `POST` /auth/forgot-password
+- `POST` /auth/reset-password
+
+### Academic Semester
+
+- `POST` /academic-semesters/create-semester
+- `GET` /academic-semesters
+- `GET` /academic-semesters/:id
+- `PATCH` /academic-semesters/:id
+- `DELETE` /academic-semesters/:id
