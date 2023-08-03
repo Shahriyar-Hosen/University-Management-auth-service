@@ -109,3 +109,48 @@ We are developing a university management system that includes three types of ro
 - academicSemester (Reference)
 - academicDepartment (Reference)
 - academicFaculty (Reference)
+
+# Sample Data
+
+Below is the sample data for different roles in the university management system.
+
+## Student
+
+```json
+{
+  "password": "123456",
+  "student": {
+    "name": {
+      "firstName": "Mezbaul",
+      "lastName": "Abedin",
+      "middleName": "Forhan"
+    },
+    "dateOfBirth": "24-04-1998",
+    "gender": "male",
+    "bloodGroup": "O+",
+    "email": "user@gmail.com",
+    "contactNo": "user_4",
+    "emergencyContactNo": "01600000000",
+    "presentAddress": "CTG",
+    "permanentAddress": "CTG",
+    "academicFaculty": "6473b67a123df7493739e2a0",
+    "academicDepartment": "6473badee8ddae33f1cf0a3f",
+    "academicSemester": "647a5d967a96742c8cb4b8d2",
+    "guardian": {
+      "fatherName": "MD.ABBU",
+      "fatherOccupation": "Retired Teacher",
+      "fatherContactNo": "01600000000",
+      "motherName": "Mrs.Ammu",
+      "motherOccupation": "Housewife",
+      "motherContactNo": "01600000000",
+      "address": "CTG"
+    },
+    "localGuardian": {
+      "name": "Zahid Hasan",
+      "occupation": "Service Holder",
+      "contactNo": "01600000000",
+      "address": "Dhaka"
+    }
+  }
+}
+```
