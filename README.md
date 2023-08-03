@@ -49,7 +49,3 @@ We are developing a university management system that includes three types of ro
 - Faculty members can manage user accounts.
 - Faculty members can manage student grades and access academic and personal information.
 - Faculty members can manage their lecture resources.
-
-## Usage
-
-Please refer to the appropriate sections for each role's functionalities and responsibilities.
