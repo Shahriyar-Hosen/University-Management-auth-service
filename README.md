@@ -1,4 +1,7 @@
-# University Management auth service
+<h1 align="center">University Management auth service</h1>
+
+<br/>
+<br/>
 
 # Authentication Service
 
