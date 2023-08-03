@@ -260,3 +260,15 @@ Below is the sample data for different roles in the university management system
   "academicFaculty": "64820578aeaa15acb6483dc5"
 }
 ```
+
+### After Populate
+
+```json
+{
+  "title": "Department of Computer Science",
+  "academicFaculty": {
+    "_id": "64820578aeaa15acb6483dc5",
+    "title": "Faculty of Science and Engineering"
+  }
+}
+```
