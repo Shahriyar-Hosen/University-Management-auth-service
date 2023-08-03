@@ -1,7 +1,6 @@
 <h1 align="center">University Management auth service</h1>
 
 <br/>
-
 <br/>
 
 <h1 align="center">Authentication Service</h1>
