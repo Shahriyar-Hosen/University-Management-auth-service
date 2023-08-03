@@ -53,7 +53,10 @@ We are developing a university management system that includes three types of ro
 - Faculty members can manage student grades and access academic and personal information.
 - Faculty members can manage their lecture resources.
 
-# Models
+<br/>
+<br/>
+
+<h1 align="center">Models</h1>
 
 ## Permission
 
