@@ -3,7 +3,7 @@
 <br/>
 <br/>
 
-# Authentication Service
+<h2 align="center">Authentication Service</h2>
 
 We are developing a university management system that includes three types of roles: Admin, Student, and Faculty.
 
