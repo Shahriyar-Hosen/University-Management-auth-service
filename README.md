@@ -272,3 +272,8 @@ Below is the sample data for different roles in the university management system
   }
 }
 ```
+
+5. Create Faculty
+6. Read Faculty (Pagination)
+7. Update faculty
+8. Delete Faculty
