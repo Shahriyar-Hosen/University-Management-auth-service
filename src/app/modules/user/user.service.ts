@@ -1,4 +1,3 @@
-import bcrypt from "bcrypt";
 import httpStatus from "http-status";
 import mongoose from "mongoose";
 import config from "../../../config/index";
@@ -27,13 +26,6 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_pass as string;
   }
-
-  // hash password
-
-  user.password = await bcrypt.hash(
-    user.password,
-    Number(config.default_student_pass)
-  );
 
   // set role
   user.role = "student";
