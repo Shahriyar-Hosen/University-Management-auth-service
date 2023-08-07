@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-this-alias */
 import bcrypt from "bcrypt";
 import { Schema, model } from "mongoose";
 import config from "../../../config";
 import { IUser, UserModel } from "./user.interface";
 
-const userSchema = new Schema<IUser>(
+const UserSchema = new Schema<IUser, UserModel>(
   {
     id: {
       type: String,
@@ -44,13 +45,35 @@ const userSchema = new Schema<IUser>(
   }
 );
 
-userSchema.pre("save", async function (next) {
-  this.password = await bcrypt.hash(
-    this.password,
+UserSchema.statics.isUserExist = async function (
+  id: string
+): Promise<Pick<
+  IUser,
+  "id" | "password" | "role" | "needsPasswordChange"
+> | null> {
+  return await User.findOne(
+    { id },
+    { id: 1, password: 1, role: 1, needsPasswordChange: 1 }
+  );
+};
+
+UserSchema.statics.isPasswordMatched = async function (
+  givenPassword: string,
+  savedPassword: string
+): Promise<boolean> {
+  return await bcrypt.compare(givenPassword, savedPassword);
+};
+
+// User.create() / user.save()
+UserSchema.pre("save", async function (next) {
+  // hashing user password
+  const user = this;
+  user.password = await bcrypt.hash(
+    user.password,
     Number(config.bcrypt_salt_rounds)
   );
 
   next();
 });
 
-export const User = model<IUser, UserModel>("User", userSchema);
+export const User = model<IUser, UserModel>("User", UserSchema);
