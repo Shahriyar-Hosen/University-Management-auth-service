@@ -16,14 +16,4 @@ router.post(
   AuthController.refreshToken
 );
 
-// router.get('/', AdminController.getAllAdmins);
-
-// router.delete('/:id', AdminController.deleteAdmin);
-
-// router.patch(
-//   '/:id',
-//   validateRequest(AdminValidation.updateAdmin),
-//   AdminController.updateAdmin
-// );
-
 export const AuthRoutes = router;
