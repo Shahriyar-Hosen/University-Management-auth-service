@@ -51,6 +51,7 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   //verify token
   // invalid token - synchronous
   let verifiedToken = null;
+
   try {
     verifiedToken = jwtHelpers.verifyToken(
       token,
