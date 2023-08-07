@@ -109,13 +109,16 @@ const deleteAdmin = async (id: string): Promise<IAdmin | null> => {
 
   try {
     session.startTransaction();
+
     //delete student first
     const student = await Admin.findOneAndDelete({ id }, { session });
     if (!student) {
       throw new ApiError(404, "Failed to delete student");
     }
+
     //delete user
     await User.deleteOne({ id });
+
     session.commitTransaction();
     session.endSession();
 
