@@ -6,7 +6,7 @@ import { managementDepartmentSearchableFields } from "./managementDepartment.con
 import {
   IManagementDepartment,
   IManagementDepartmentFilters,
-} from "./managementDepartment.inerface";
+} from "./managementDepartment.interface";
 import { ManagementDepartment } from "./managementDepartment.model";
 
 const createDepartment = async (

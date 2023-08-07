@@ -5,7 +5,7 @@ import catchAsync from "../../../shared/catchAsync";
 import pick from "../../../shared/pick";
 import sendResponse from "../../../shared/sendResponse";
 import { managementDepartmentFilterableFields } from "./managementDepartment.constant";
-import { IManagementDepartment } from "./managementDepartment.inerface";
+import { IManagementDepartment } from "./managementDepartment.interface";
 import { ManagementDepartmentService } from "./managementDepartment.service";
 
 const createDepartment = catchAsync(async (req: Request, res: Response) => {
