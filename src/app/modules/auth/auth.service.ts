@@ -27,7 +27,6 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   }
 
   //create access token & refresh token
-
   const { id: userId, role, needsPasswordChange } = isUserExist;
   const accessToken = jwtHelpers.createToken(
     { userId, role },
