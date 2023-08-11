@@ -1,7 +1,7 @@
 import { Server } from "http";
 import mongoose from "mongoose";
 import app from "./app";
-import config from "./config/index";
+import config from "./config";
 import { errLogger, logger } from "./shared/logger";
 
 process.on("uncaughtException", error => {
