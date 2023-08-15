@@ -130,7 +130,6 @@ export const StudentSchema = new Schema<IStudent, StudentModel>(
     },
     profileImage: {
       type: String,
-      // required: true,
     },
   },
   {
