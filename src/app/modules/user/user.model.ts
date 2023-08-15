@@ -102,5 +102,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 //   givenPassword: string,
 //   savedPassword: string
 // ): Promise<boolean> {
-//   return await bcrypt.compare(givenPassword, savedPassword);
-//
+//   return await bcrypt.compare(givenPassword,
