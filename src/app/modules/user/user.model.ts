@@ -92,4 +92,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 // UserSchema.methods.isUserExist = async function (
 //   id: string
 // ): Promise<Partial<IUser> | null> {
-//   return await User.findOne(
+//   return await User.
