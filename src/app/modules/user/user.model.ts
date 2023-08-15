@@ -102,4 +102,3 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 //   givenPassword: string,
 //   savedPassword: string
 // ): Promise<boolean> {
-//   return
