@@ -94,4 +94,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 // ): Promise<Partial<IUser> | null> {
 //   return await User.findOne(
 //     { id },
-//     { id: 1, password: 1,
+//     { id: 1,
