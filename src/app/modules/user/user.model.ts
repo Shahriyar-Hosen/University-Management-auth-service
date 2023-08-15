@@ -88,5 +88,3 @@ UserSchema.pre("save", async function (next) {
 });
 
 export const User = model<IUser, UserModel>("User", UserSchema);
-
-// UserSchema.methods.isUserExist = async function (
