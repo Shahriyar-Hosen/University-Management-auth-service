@@ -98,4 +98,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 //   );
 // };
 
-// UserSchema.methods.
+//
