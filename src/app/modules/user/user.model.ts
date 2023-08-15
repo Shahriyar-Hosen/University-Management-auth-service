@@ -96,6 +96,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 //     { id },
 //     { id: 1, password: 1, needsPasswordChange: 1 }
 //   );
-// };
-
 //
