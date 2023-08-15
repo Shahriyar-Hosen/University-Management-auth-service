@@ -27,7 +27,7 @@ router.get(
 
 router.patch(
   "/:id",
-  validateRequest(AcademicFacultyValidation.updatefacultyZodSchema),
+  validateRequest(AcademicFacultyValidation.updateFacultyZodSchema),
   auth(
     ENUM_USER_ROLE.SUPER_ADMIN,
     ENUM_USER_ROLE.ADMIN,
