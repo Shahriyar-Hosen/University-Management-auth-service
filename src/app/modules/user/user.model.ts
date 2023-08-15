@@ -95,5 +95,4 @@ export const User = model<IUser, UserModel>("User", UserSchema);
 //   return await User.findOne(
 //     { id },
 //     { id: 1, password: 1, needsPasswordChange: 1 }
-//   );
 //
